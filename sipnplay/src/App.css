@@ -217,6 +217,10 @@ h1 {
 	margin-right: 10px;
 }
 
+.time-container{
+	margin-top: 10px;
+}
+
 .create-btn {
 	padding: 8px 16px;
 	background-color: #ff4081;
