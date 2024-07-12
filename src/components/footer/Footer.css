@@ -1,0 +1,18 @@
+.footer{
+    min-height: 50vh;
+    padding: 2rem;
+    background-color: #f8ffe7;
+}
+.map {
+    overflow: hidden;
+    height : 0;
+    position: relative;
+    padding-bottom: 30%;
+}
+
+.footer .map iframe{
+    height : 80%;
+    width: 70%;
+    left :0;
+    position: absolute;
+}

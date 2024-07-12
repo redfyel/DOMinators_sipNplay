@@ -1,0 +1,39 @@
+.formm {
+    background-image: 
+    linear-gradient(45deg , #DEE9D3 25%, transparent 25%, transparent 75%, #DEE9D3  75%, #DEE9D3 ), 
+    linear-gradient(45deg , #DEE9D3 25%, transparent 25%, transparent 75%, #DEE9D3  75%, #DEE9D3 ),
+    linear-gradient(45deg , #bbbeb8 25%, transparent 25%, transparent 75%, #788b65   75%, #788b65  ),
+    linear-gradient(45deg , #c1dda5 25%, transparent 25%, transparent 75%, #788b65   75%, #788b65 );
+    background-position: 0 0, 40px 40px, 40px 0, 0, px;
+    background-size: 50px 50px;
+    color:#6F1D1B;
+    border: 2px solid #6F1D1B;
+    box-shadow: 10px 12px 30px #6F1D1B;
+    width : 500px;
+}
+
+.form-control:focus {
+    border-color: #6F1D1B;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5);
+}
+
+#butt {
+    background-color :  #6F1D1B;
+    box-shadow: 5px 5px 5px #a7bf8f;
+    color :  #a7bf8f;
+}
+#butt:hover{
+    letter-spacing: 0.25em;
+    background: #DEE9D3;
+    box-shadow: 0px 0px 35px  #6F1D1B;
+    color :#6F1D1B;
+}
+#heading1{
+    color : #DEE9D3;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.7); /* Optional subtle shadow */
+  transition: box-shadow 0.2s ease-in-out;
+}
+#heading1:hover{
+    color : #6F1D1B;
+    box-shadow: 0 0 5px #6F1D1B;
+}

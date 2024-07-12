@@ -1,21 +1,51 @@
-import { useState } from 'react'
-import * as THREE from "three";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import * as THREE from "three";
+
+import RootLayout from './RootLayout';
+import Home from './components/home/Home';
+import About from './components/about/About'
+import Events from './components/events/Events'
+import Menu from './components/menu/Menu'
+import Register from './components/register/Register';
 import './App.css'
 
+
 function App() {
-  let scene, camera, renderer, sun, earth, orbit;
+    
+    const browserRouter = createBrowserRouter([
+      {
+        path : '',
+        element : <RootLayout />,
+        children : [
+          {
+            path : '',
+            element : <Home/> 
+          },
+          {
+            path : '/about',
+            element : <About />
+          },
+          {
+            path : '/home',
+            element : <Home />
+          },
+          {
+            path : '/events',
+            element : <Events />
+          },
+          {
+            path : '/menu',
+            element : <Menu />
+          },
+          {
+            path : '/register',
+            element : <Register />
+          },
+        ]
+      }
+    ]);
 
-  function init(){
-    scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, );
-  }
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <h1>PlaceHolder</h1>
-    </>
-  )
+  return ( <RouterProvider router={browserRouter}></RouterProvider> )
 }
 
-export default App
+export default App;
