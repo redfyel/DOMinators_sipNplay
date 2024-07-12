@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import Calendar from 'react-calendar';
 import moment from 'moment';
 import 'react-calendar/dist/Calendar.css';
-import './calendar.css';
+import './App.css';
+import CalendarComponent from './CalendarComponent';
 
-const CalendarComponent = () => {
+const EventCalendar = () => {
     const [selectedDate, setSelectedDate] = useState(null);
     const [events] = useState([
         // Sample events for demonstration
