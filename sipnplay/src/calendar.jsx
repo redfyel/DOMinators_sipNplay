@@ -117,7 +117,7 @@ const CalendarComponent = () => {
                                             <div className="event-card-header">
                                                 <span className="event-date">
                                                     {event.date.toDateString()}
-                                                </span>
+                                                </span>{" "}
                                                 <span className="event-time">
                                                     {moment(event.time).format('h:mm a')}
                                                 </span>
