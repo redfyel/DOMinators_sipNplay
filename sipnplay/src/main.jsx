@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import CalendarComponent from "./calendar";
+import CalendarComponent from "./EditableCalendar";
 import "./calendar.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
